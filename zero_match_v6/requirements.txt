@@ -1,0 +1,12 @@
+streamlit>=1.40
+pandas>=2.1
+numpy>=1.26
+plotly>=5.20
+scikit-learn>=1.3     # ML-бенчмарк и оптимизатор
+openpyxl>=3.1         # экспорт в Excel
+pyarrow>=15           # экспорт/импорт Parquet
+reportlab>=4.0        # PDF (для кириллицы нужен шрифт: переменная PDF_FONT)
+cryptography>=42      # подпись журнала и манифестов (Ed25519); без неё — только хеш-цепочка
+# spacy>=3.7          # необязательно: NER (python -m spacy download ru_core_news_lg)
+# natasha>=1.6        # необязательно: NER-запасной вариант
+# pytest>=8           # тесты можно запускать и без него: python tests/run_tests.py
